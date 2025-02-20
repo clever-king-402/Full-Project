@@ -1,0 +1,184 @@
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+    @import "tailwindcss";
+     :root {
+        --primaryColor: #F46A06;
+        font-family: "Quicksand", serif;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    ul {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container {
+        width: 85%;
+        margin: auto;
+    }
+    
+    .nav-content {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .nav-content a {
+        color: var(--primaryColor);
+        padding: 10px;
+    }
+    
+    .btn {
+        background-color: var(--primaryColor);
+        color: white;
+        padding: 10px 24px;
+        font-weight: bold;
+    }
+    
+    .logo {
+        font-size: 36px;
+        font-weight: bold;
+    }
+    
+    .logo span {
+        color: var(--primaryColor);
+    }
+    
+    .Navigation-bar {
+        padding: 20px 0;
+    }
+    
+    .hero {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    
+    .hero-discription {
+        flex-basis: 50%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero .title {
+        font-size: 48px;
+        font-weight: bold;
+    }
+    
+    .hero .disc {
+        font-size: 16px;
+        padding-right: 120px;
+    }
+    
+    .btn-grp {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .btn-white {
+        background-color: white;
+        box-shadow: 2px 2px 4px black;
+        color: black;
+    }
+    
+    .counter-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 100px;
+        background-color: var(--primaryColor);
+        color: white;
+    }
+    
+    .counter-section .nbr {
+        font-size: 40px;
+        font-family: "Quicksand", serif;
+        font-weight: bold;
+    }
+    
+    footer {
+        background-color: var(--primaryColor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+        color: white;
+        gap: 20px;
+    }
+    
+    footer a {
+        color: white;
+    }
+    
+    footer .logos {
+        display: flex;
+        gap: 20px;
+    }
+    
+    footer .links {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 75px 280px;
+    }
+    
+    .newsletter .title {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+    }
+    
+    .newsletter .description {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+    
+    .newsletter input {
+        border: 3px solid #E5E5E5;
+        padding: 10px;
+        width: 400px;
+    }
+    
+    .newsletter form {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .divider {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 150px;
+        gap: 50px;
+        background-color: black;
+        color: white;
+    }
+    
+    .divider .name {
+        font-size: 28px;
+        font-weight: bold;
+    }
