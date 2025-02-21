@@ -182,3 +182,25 @@
         font-size: 28px;
         font-weight: bold;
     }
+    
+    .banner {
+        background-image: url("../src/assets/banner.jpg");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        color: white;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    .banner .description {
+        font-size: 16px;
+        padding: 10px 300px;
+    }
+    
+    .banner .title {
+        font-size: 36px;
+        padding: 10px 250px;
+        color: var(--primaryColor);
+    }

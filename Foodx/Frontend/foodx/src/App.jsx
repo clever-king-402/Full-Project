@@ -5,6 +5,7 @@ import CounterSection from './layouts/CounterSection'
 import BottomBar from './layouts/BottomBar'
 import Newsletter from './layouts/Newsletter'
 import Divider from './layouts/Divider'
+import Banner from './layouts/Banner'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <Navbar/>
     <HeroSection/>
     <CounterSection/>
+    <Banner/>
     <Divider/>
     <Newsletter/>
     <BottomBar/>

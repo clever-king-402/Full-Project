@@ -10,8 +10,8 @@ function HeroSection() {
             </div>
             <div className="disc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus bibendum amet leo. </div>
             <div className="btn-grp">
-                <div className="btn">Order Now</div>
-                <div className="btn btn-white">Learn Now </div>
+                <button className="btn">Order Now <i class="bi bi-basket"></i></button>
+                <button className="btn btn-white">Learn Now <i class="bi bi-chevron-right font-bold"></i></button>
             </div>
         </div>
         <div className="hero-image">
