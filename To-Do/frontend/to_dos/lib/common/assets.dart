@@ -5,4 +5,5 @@ class Assets {
   static final onBoarding1 = "assets/images/onboarding-1.png";
   static final onBoarding2 = "assets/images/onboarding-2.png";
   static final onBoarding3 = "assets/images/onboarding-3.png";
+  static final profile = "assets/images/profile.jpg";
 }

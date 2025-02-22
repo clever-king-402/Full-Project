@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:to_dos/features/auth/ui/screens/login_page.dart';
 import 'package:to_dos/features/auth/ui/screens/register_page.dart';
+import 'package:to_dos/features/auth/ui/screens/starting_page.dart';
+import 'package:to_dos/features/dashboard/ui/screen/profile_screen.dart';
 import 'package:to_dos/features/home/ui/screens/home_page_screen.dart';
 import 'package:to_dos/features/onboarding/ui/screens/onboarding_screen.dart';
+import 'package:to_dos/features/settings/ui/screens/settings_screen.dart';
 import 'package:to_dos/features/splash/ui/screen/splash_page.dart';
 
 void main() {
@@ -15,7 +18,7 @@ class MyApplication extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: OnBoadingScreen(),
+      home: HomePageScreen(),
     );
   }
 }

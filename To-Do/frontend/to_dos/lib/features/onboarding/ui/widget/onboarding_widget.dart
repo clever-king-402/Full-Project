@@ -53,17 +53,6 @@ class _OnBoardingWidgetState extends State<OnBoardingWidget> {
                     TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
                 bodyTextStyle: TextStyle(fontSize: 16)),
           ), //pae color blacks)
-          PageViewModel(
-            title: 'Welcome to UpTodo',
-            body:
-                "Please login to your account or create new account to continue",
-            decoration: PageDecoration(
-                pageColor: Colors.black,
-                titleTextStyle:
-                    TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-                bodyTextStyle: TextStyle(fontSize: 16)),
-                
-          ), //pae color blacks)
         ],
         showNextButton: false,
         showDoneButton: false,

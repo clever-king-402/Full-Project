@@ -6,7 +6,7 @@ import 'package:to_dos/common/assets.dart';
 class CustomLoginButton extends StatefulWidget {
   final String text;
   final String logo;
-  const CustomLoginButton({super.key, required this.text, required this.logo});
+   CustomLoginButton({super.key, required this.text, this.logo = ""});
 
   @override
   State<CustomLoginButton> createState() => _CustomLoginButtonState();
@@ -24,14 +24,12 @@ class _CustomLoginButtonState extends State<CustomLoginButton> {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          SvgPicture.asset(
+         widget.logo.isNotEmpty ? SvgPicture.asset(
             widget.logo,
             width: 24,
             color: Colors.white,
-          ),
-          SizedBox(
-            width: 10,
-          ),
+          )
+          :Text(""),
           Text(
             widget.text,
             textAlign: TextAlign.center,
