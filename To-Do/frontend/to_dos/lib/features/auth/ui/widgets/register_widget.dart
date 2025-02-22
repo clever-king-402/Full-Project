@@ -5,9 +5,14 @@ import 'package:to_dos/common/buttons/custom_button_login.dart';
 import 'package:to_dos/common/assets.dart';
 import 'package:to_dos/common/textfield/custom_text_field.dart';
 
-class LoginWidget extends StatelessWidget {
-  const LoginWidget({super.key});
+class RegisterWidget extends StatefulWidget {
+  const RegisterWidget({super.key});
 
+  @override
+  State<RegisterWidget> createState() => _RegisterWidgetState();
+}
+
+class _RegisterWidgetState extends State<RegisterWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,11 +27,11 @@ class LoginWidget extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Login",
+                "Register",
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
               ),
               SizedBox(
-                height: 47,
+                height: 23,
               ),
               Container(
                 child: Column(
@@ -53,12 +58,23 @@ class LoginWidget extends StatelessWidget {
                     SizedBox(
                       height: 10,
                     ),
+                    CustomTextField(hintText: "*********", secure: true),
+                    SizedBox(
+                      height: 27,
+                    ),
+                    Text(
+                      "Confirm Password",
+                      style: CustomTheme().textTheme,
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
                     CustomTextField(hintText: "*********", secure: true)
                   ],
                 ),
               ),
               SizedBox(
-                height: 69,
+                height: 40,
               ),
               CustomButton(),
               SizedBox(
@@ -72,7 +88,8 @@ class LoginWidget extends StatelessWidget {
               ),
               CustomLoginButton(
                 text: "Login with Google",
-                logo: Assets.googleLogo,
+                logo: 
+                Assets.googleLogo,
               ),
               SizedBox(
                 height: 20,
