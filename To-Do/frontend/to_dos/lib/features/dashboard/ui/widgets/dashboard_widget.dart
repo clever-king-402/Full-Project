@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 import 'package:to_dos/features/home/ui/screens/home_page_screen.dart';
+import 'package:to_dos/features/profile/ui/screen/profile_screen.dart';
 
 class DashBoardWidget extends StatefulWidget {
   const DashBoardWidget({super.key});
@@ -33,7 +34,7 @@ class _DashBoardWidgetState extends State<DashBoardWidget> {
     HomePageScreen(),
     HomePageScreen(),
     HomePageScreen(),
-    HomePageScreen(),
+    ProfilePage(),
   ];
 
   List<PersistentBottomNavBarItem> _navBarsItems() => [
@@ -63,8 +64,8 @@ class _DashBoardWidgetState extends State<DashBoardWidget> {
           activeColorSecondary: _getSecondaryItemColorForSpecificStyles(),
         ),
         PersistentBottomNavBarItem(
-          icon: const Icon(Icons.message),
-          title: "Messages",
+          icon: const Icon(Icons.alarm_rounded),
+          title: "Focus",
           activeColorPrimary: Colors.deepOrange,
           inactiveColorPrimary: Colors.grey,
           activeColorSecondary: _navBarStyle == NavBarStyle.style7 ||

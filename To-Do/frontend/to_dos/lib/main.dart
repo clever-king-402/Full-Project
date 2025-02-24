@@ -3,6 +3,7 @@ import 'package:to_dos/features/auth/ui/screens/login_page.dart';
 import 'package:to_dos/features/auth/ui/screens/register_page.dart';
 import 'package:to_dos/features/auth/ui/screens/starting_page.dart';
 import 'package:to_dos/features/dashboard/ui/screens/dashboard_screen.dart';
+import 'package:to_dos/features/focus/ui/screens/focus_screen.dart';
 import 'package:to_dos/features/profile/ui/screen/profile_screen.dart';
 import 'package:to_dos/features/home/ui/screens/home_page_screen.dart';
 import 'package:to_dos/features/onboarding/ui/screens/onboarding_screen.dart';
@@ -19,7 +20,7 @@ class MyApplication extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: ProfilePage(),
+      home: FocusScreen(),
     );
   }
 }
